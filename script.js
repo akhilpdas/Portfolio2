@@ -97,7 +97,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 
 // --- Typing animation ---
 const phrases = [
-    'Lead Developer with 12+ years of experience',
+    'Lead Developer with 13 years of experience',
     'Python & Django specialist',
     'AI/LLM integration expert',
     'Building scalable backend systems',

@@ -872,6 +872,32 @@ a {
     color: var(--text-primary);
 }
 
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.project-header .project-title {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.project-link {
+    color: var(--text-secondary);
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.project-link:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
 .project-card:not(.featured) .project-title {
     font-size: 1.1rem;
 }
