@@ -85,8 +85,8 @@
         <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Lead Developer with <span class="accent">13 years</span> of experience specializing in Python and Django within high-performance startup environments. I have a proven track record in designing, developing, and deploying scalable, secure enterprise products, gaming server infrastructure, and web applications.</p>
-                <p>My recent focus has been on <span class="accent">AI/LLM integration</span> using OpenAI and Anthropic APIs, including agentic pipelines, AI-assisted developer tooling, and intelligent coaching systems.</p>
+                <p>Lead Developer with <span class="accent">13 years</span> of experience specializing in Python and Django within high-performance startup environments. I have a proven track record in designing, developing, and deploying scalable, secure enterprise products, gaming server infrastructure, voice AI/IVR automation platforms, and web applications.</p>
+                <p>My recent focus has been on <span class="accent">AI/LLM integration</span> using OpenAI and Anthropic APIs, including agentic pipelines, AI-assisted developer tooling, real-time speech-to-speech connectors, and intelligent coaching systems.</p>
                 <p>I thrive in fast-paced environments where I can architect robust backend systems, lead engineering teams, and push the boundaries of what's possible with modern technology.</p>
                 <div class="about-stats">
                     <div class="stat">
@@ -94,7 +94,7 @@
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number" data-target="4">4</span>
+                        <span class="stat-number" data-target="5">5</span>
                         <span class="stat-label">Companies</span>
                     </div>
                     <div class="stat">
@@ -115,7 +115,7 @@
     <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
         self.name = <span class="code-string">"Akhil P Das"</span>
         self.role = <span class="code-string">"Lead Developer"</span>
-        self.location = <span class="code-string">"Bengaluru, IN"</span>
+        self.location = <span class="code-string">"Hyderabad, IN"</span>
         self.experience = <span class="code-string">"13 years"</span>
         self.languages = [
             <span class="code-string">"Python"</span>, <span class="code-string">"JavaScript"</span>,
@@ -144,10 +144,35 @@
                 <div class="timeline-content">
                     <div class="timeline-header">
                         <div>
+                            <h3 class="timeline-role">Lead Python Developer &mdash; AI</h3>
+                            <h4 class="timeline-company">@ EMSCALE IT Services Pvt Ltd</h4>
+                        </div>
+                        <span class="timeline-date">May 2026 &mdash; Present</span>
+                    </div>
+                    <ul class="timeline-list">
+                        <li>Leading outbound IVR calling as a native SpeechConnector capability (NexusAI &rarr; SpeechConnector Outbound Service &rarr; Genesys), run as a physically separate deployment from the ~4,000-concurrent inbound listener while sharing the connector core as a library</li>
+                        <li>Led removal of the legacy Twilio dependency in favor of a Genesys-only outbound call path</li>
+                        <li>Built and hardened live outbound call handling: Redis-backed per-call session registry, Genesys leg teardown on call termination, voicemail audio-routing fixes, and a nudge/disconnect race fix</li>
+                        <li>Established spec-driven AI-assisted development practice using GitHub Spec Kit and Claude Code &mdash; an engineering constitution and custom review subagents (PHI leak, tenant isolation) gating changes before human review</li>
+                        <li>Owned CI/CD and deployment readiness: GitHub Actions build/push to ECR, EKS deployment workflows, Dockerfile hardening, and idempotent database migrations</li>
+                    </ul>
+                    <div class="timeline-tags">
+                        <span class="tag">Python</span><span class="tag">Genesys Cloud</span><span class="tag">Redis</span>
+                        <span class="tag">Kubernetes</span><span class="tag">EKS</span><span class="tag">Claude Code</span>
+                        <span class="tag">GitHub Actions</span><span class="tag">Speech AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div>
                             <h3 class="timeline-role">Backend Lead Developer</h3>
                             <h4 class="timeline-company">@ Flop Hero Development Pvt Ltd</h4>
                         </div>
-                        <span class="timeline-date">Apr 2025 &mdash; Present</span>
+                        <span class="timeline-date">Apr 2025 &mdash; Apr 2026</span>
                     </div>
                     <ul class="timeline-list">
                         <li>Architected Django REST API for poker GTO strategy training with MongoDB, Redis caching, and Celery async processing</li>
@@ -283,6 +308,7 @@
                     <li><span class="bullet"></span>Anthropic Claude API</li>
                     <li><span class="bullet"></span>Agentic Workflows</li>
                     <li><span class="bullet"></span>Custom Prompt Pipelines</li>
+                    <li><span class="bullet"></span>Speech AI / Voice IVR (Genesys)</li>
                 </ul>
             </div>
 
@@ -306,7 +332,8 @@
                 <h3>DevOps & Tools</h3>
                 <ul class="skill-list">
                     <li><span class="bullet"></span>Docker / CI/CD</li>
-                    <li><span class="bullet"></span>AWS (S3, ECS, SQS)</li>
+                    <li><span class="bullet"></span>AWS (S3, ECS, EKS, SQS)</li>
+                    <li><span class="bullet"></span>Kubernetes / Secrets Manager</li>
                     <li><span class="bullet"></span>Celery / WebSockets</li>
                     <li><span class="bullet"></span>Git / Jenkins / NGINX</li>
                 </ul>
@@ -321,7 +348,7 @@
                     <li><span class="bullet"></span>Keycloak (JWT/RBAC)</li>
                     <li><span class="bullet"></span>Stripe / Razorpay</li>
                     <li><span class="bullet"></span>Zoho / Slack</li>
-                    <li><span class="bullet"></span>Webex / Zoom APIs</li>
+                    <li><span class="bullet"></span>Genesys Cloud / Webex / Zoom</li>
                 </ul>
             </div>
         </div>
@@ -345,6 +372,18 @@
                 <div class="project-tech">
                     <span>Python</span><span>Streamlit</span><span>Groq Llama 3.3</span><span>ChromaDB</span>
                     <span>RAG</span><span>Multi-Agent</span><span>SQLite</span>
+                </div>
+            </div>
+
+            <div class="project-card featured" data-aos>
+                <div class="project-label">Featured Project</div>
+                <h3 class="project-title">SpeechConnector &mdash; Outbound Voice AI/IVR</h3>
+                <div class="project-description">
+                    <p>Native outbound IVR calling capability (NexusAI &rarr; SpeechConnector Outbound Service &rarr; Genesys), architected as a physically separate deployment from a ~4,000-concurrent inbound listener while sharing the connector core (provider registry, streaming TTS, guardrails, multi-agent brain) as a library. Replaced the legacy Twilio integration with a Genesys-only outbound call path, backed by a Redis session registry and spec-driven, AI-assisted development workflow.</p>
+                </div>
+                <div class="project-tech">
+                    <span>Python</span><span>Genesys Cloud</span><span>Redis</span><span>Kubernetes</span>
+                    <span>EKS</span><span>Claude Code</span><span>GitHub Actions</span>
                 </div>
             </div>
 
