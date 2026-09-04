@@ -1159,6 +1159,7 @@ a {
 
     .hero-cta { flex-direction: column; }
     .hero-cta .btn { text-align: center; justify-content: center; }
+    .scroll-indicator { display: none; }
 
     .about-stats { gap: 20px; }
     .stat-number { font-size: 2rem; }
